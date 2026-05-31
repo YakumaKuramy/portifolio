@@ -203,93 +203,62 @@
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label">// Projetos</span>
-        <h2 class="section__title">Meus Trabalhos</h2>
-        <p class="section__subtitle">Projetos autorais que demonstram minha capacidade de arquitetura e lógica de gameplay</p>
+        <h2 class="section__title">Trabalho em Destaque</h2>
+        <p class="section__subtitle">Apresentação detalhada do meu jogo principal e seus subsistemas de programação</p>
       </div>
 
-      <div class="projects__grid">
+      <!-- Main Project Card (Capa de Cordel Style) -->
+      <article class="project-card reveal">
+        <div class="project-card__image-wrapper">
+          <img class="project-card__image" src="https://img.itch.zone/aW1nLzIwMzQwMDM4LnBuZw==/original/LFttIG.png" alt="Naboko's Deal - The Adventure Cover Art" loading="lazy">
+          <div class="project-card__overlay">
+            <a href="https://marcossousa.itch.io/nabokos-deal" class="btn btn--primary" target="_blank" rel="noopener">Ver no Itch.io</a>
+          </div>
+        </div>
+        <div class="project-card__content">
+          <span class="project-card__tag">Projeto Destaque</span>
+          <h3 class="project-card__title">Naboko's Deal — The Adventure</h3>
+          <p class="project-card__description">
+            Junte-se a Naboko em sua jornada de volta para casa! Um jogo de aventura e quebra-cabeças que serve como modelo principal da minha arquitetura de software de jogos. Implementa um fluxo modular e desacoplado de mecânicas.
+          </p>
+          <p class="project-card__description">
+            Possui persistência local completa (Save &amp; Load) via serialização de dados estruturados em arquivos locais, gerenciamento reativo de interface (menus e transições de time scale), sistema de diálogos de NPCs com paginação dinâmica e carregamento assíncrono de cenas de mapas.
+          </p>
+          <div class="project-card__tech">
+            <span class="project-card__tech-tag">Godot 4</span>
+            <span class="project-card__tech-tag">GDScript</span>
+            <span class="project-card__tech-tag">Save &amp; Load System</span>
+            <span class="project-card__tech-tag">Dialogue System</span>
+            <span class="project-card__tech-tag">Scene Management</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://marcossousa.itch.io/nabokos-deal" class="btn btn--outline" target="_blank" rel="noopener">🎮 Jogar Versão Web</a>
+            <a href="https://github.com/YakumaKuramy" class="btn btn--outline" target="_blank" rel="noopener">📂 Repositório</a>
+          </div>
+        </div>
+      </article>
 
-        <!-- Project 1: Naboko's Deal -->
-        <article class="project-card reveal">
-          <div class="project-card__image-wrapper">
-            <img class="project-card__image" src="assets/images/projects/naboko_deal_cover.png" alt="Naboko's Deal - The Adventure Cover Art" loading="lazy">
-            <div class="project-card__overlay">
-              <span class="btn btn--primary">Ver no Itch.io</span>
-            </div>
+      <!-- Game Screenshot Gallery (Xilo Blocks) -->
+      <div class="gallery__container reveal">
+        <h3 class="gallery__title">// Registros do Jogo (Capturas de Tela)</h3>
+        <div class="gallery__grid">
+          <div class="gallery__item">
+            <img src="https://img.itch.zone/aW1hZ2UvMzQwNzkyNy8yMDM0MDAyMy5wbmc=/original/8Ut0h8.png" alt="Menu Principal e Seleção de Fases" loading="lazy">
+            <span>Menu &amp; Seleção de Fases</span>
           </div>
-          <div class="project-card__content">
-            <span class="project-card__tag">Projeto Destaque</span>
-            <h3 class="project-card__title">Naboko's Deal — The Adventure</h3>
-            <p class="project-card__description">
-              Acompanhe Naboko resolvendo puzzles e fazendo entregas em uma jornada para voltar para casa! Implementa um sistema completo de Save &amp; Load estruturado localmente, caixas de diálogo dinâmicas com paginação para NPCs, e carregamento assíncrono de cenários com transições suaves.
-            </p>
-            <div class="project-card__tech">
-              <span class="project-card__tech-tag">Godot 4</span>
-              <span class="project-card__tech-tag">GDScript</span>
-              <span class="project-card__tech-tag">C# Scripting</span>
-              <span class="project-card__tech-tag">Save System</span>
-            </div>
-            <div class="project-card__links">
-              <a href="https://marcossousa.itch.io/nabokos-deal" class="btn btn--outline" target="_blank" rel="noopener">🎮 Jogar Versão Web</a>
-              <a href="https://github.com/YakumaKuramy" class="btn btn--outline" target="_blank" rel="noopener">📂 Código Fonte</a>
-            </div>
+          <div class="gallery__item">
+            <img src="https://img.itch.zone/aW1hZ2UvMzQwNzkyNy8yMDM0MDAyNC5wbmc=/original/iBJh8t.png" alt="Exploração e Mecânicas de Gameplay" loading="lazy">
+            <span>Gameplay &amp; Puzzle 2D</span>
           </div>
-        </article>
-
-        <!-- Project 2: Sertão Odisseia -->
-        <article class="project-card reveal">
-          <div class="project-card__image-wrapper">
-            <img class="project-card__image" src="assets/images/projects/sertao_odisseia_cover.png" alt="Sertão Odisseia Cover Art" loading="lazy">
-            <div class="project-card__overlay">
-              <span class="btn btn--primary">Ver Detalhes</span>
-            </div>
+          <div class="gallery__item">
+            <img src="https://img.itch.zone/aW1hZ2UvMzQwNzkyNy8yMDM0MDAyNy5wbmc=/original/mDT01L.png" alt="Sistema de Diálogos e Cutscenes" loading="lazy">
+            <span>Diálogos &amp; Cutscenes</span>
           </div>
-          <div class="project-card__content">
-            <span class="project-card__tag">Game Jam</span>
-            <h3 class="project-card__title">Sertão Odisseia</h3>
-            <p class="project-card__description">
-              RPG clássico por turnos inspirado nos causos e folclore do nordeste brasileiro. O jogo utiliza uma máquina de estados robusta (Finite State Machine) para gerenciar o combate e o comportamento da inteligência artificial dos inimigos, além de possuir um sistema de áudio global dinâmico.
-            </p>
-            <div class="project-card__tech">
-              <span class="project-card__tech-tag">Godot 4</span>
-              <span class="project-card__tech-tag">GDScript</span>
-              <span class="project-card__tech-tag">State Machine</span>
-              <span class="project-card__tech-tag">Audio Mixer</span>
-            </div>
-            <div class="project-card__links">
-              <a href="https://marcossousa.itch.io/" class="btn btn--outline" target="_blank" rel="noopener">🎮 Jogar Demo</a>
-              <a href="https://github.com/YakumaKuramy" class="btn btn--outline" target="_blank" rel="noopener">📂 Repositório</a>
-            </div>
+          <div class="gallery__item">
+            <img src="https://img.itch.zone/aW1hZ2UvMzQwNzkyNy8yMDM0MDAzMy5wbmc=/original/1xnvRT.png" alt="Level Design e Exploração" loading="lazy">
+            <span>Exploração &amp; Level Design</span>
           </div>
-        </article>
-
-        <!-- Project 3: Cactus Rush -->
-        <article class="project-card reveal">
-          <div class="project-card__image-wrapper">
-            <img class="project-card__image" src="assets/images/projects/cactus_rush_cover.png" alt="Cactus Rush Cover Art" loading="lazy">
-            <div class="project-card__overlay">
-              <span class="btn btn--primary">Ver Detalhes</span>
-            </div>
-          </div>
-          <div class="project-card__content">
-            <span class="project-card__tag">Protótipo Unity</span>
-            <h3 class="project-card__title">Cactus Rush</h3>
-            <p class="project-card__description">
-              Jogo de corrida infinita rítmico 2D onde o jogador controla o desvio de obstáculos na Caatinga. Desenvolvido para exercitar padrões de projeto como Factory (para geração infinita dos cactos) e Singleton (para gerenciadores globais), integrando salvamento local criptografado.
-            </p>
-            <div class="project-card__tech">
-              <span class="project-card__tech-tag">Unity</span>
-              <span class="project-card__tech-tag">C#</span>
-              <span class="project-card__tech-tag">Object Pooling</span>
-              <span class="project-card__tech-tag">Factory Pattern</span>
-            </div>
-            <div class="project-card__links">
-              <a href="https://marcossousa.itch.io/" class="btn btn--outline" target="_blank" rel="noopener">🎮 Jogar Demo</a>
-              <a href="https://github.com/YakumaKuramy" class="btn btn--outline" target="_blank" rel="noopener">📂 Repositório</a>
-            </div>
-          </div>
-        </article>
-
+        </div>
       </div>
     </div>
   </section>
@@ -377,7 +346,7 @@
       <div class="about__grid">
         <div class="about__image-wrapper reveal-left">
           <div class="about__image">
-            <img src="assets/images/profile/profile.png" alt="Marcos Sousa" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="assets/images/profile/foto.jpeg" alt="Marcos Sousa" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
         </div>
         <div class="about__text reveal-right">

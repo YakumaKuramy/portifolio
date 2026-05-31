@@ -795,6 +795,59 @@
   min-height: 140px;
 }
 
+/* --- Game Gallery --- */
+.gallery__container {
+  margin-top: var(--space-3xl);
+  border-top: 2.5px dashed var(--color-border);
+  padding-top: var(--space-2xl);
+}
+
+.gallery__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  color: var(--color-accent-secondary);
+  margin-bottom: var(--space-xl);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-lg);
+}
+
+.gallery__item {
+  background: var(--color-bg-secondary);
+  border: 2px solid var(--color-text-muted);
+  padding: var(--space-sm);
+  box-shadow: 4px 4px 0 var(--color-bg-tertiary);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.gallery__item:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent-primary);
+  box-shadow: 4px 4px 0 var(--color-accent-primary);
+}
+
+.gallery__item img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+}
+
+.gallery__item span {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
 /* --- Footer --- */
 .footer {
   padding: var(--space-3xl) 0;
