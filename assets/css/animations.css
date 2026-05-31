@@ -72,8 +72,23 @@
     box-shadow: 0 0 20px var(--color-accent-glow);
   }
   50% {
-    box-shadow: 0 0 40px var(--color-accent-glow), 0 0 60px rgba(124, 58, 237, 0.15);
+    box-shadow: 0 0 40px var(--color-accent-glow), 0 0 60px rgba(194, 83, 26, 0.15);
   }
+}
+
+@keyframes cordel-sway {
+  0%, 100% {
+    transform: rotate(-1.5deg);
+  }
+  50% {
+    transform: rotate(1.5deg);
+  }
+}
+
+.cordel-sway {
+  animation: cordel-sway 4s ease-in-out infinite;
+  transform-origin: top center;
+  display: inline-block;
 }
 
 @keyframes typing {
@@ -204,6 +219,12 @@
 .hero__actions {
   animation: fadeInUp 0.8s ease forwards;
   animation-delay: 1s;
+  opacity: 0;
+}
+
+.hero__stats {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1.2s;
   opacity: 0;
 }
 

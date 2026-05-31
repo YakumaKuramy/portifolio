@@ -17,7 +17,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -34,9 +34,10 @@
 
       <ul class="navbar__menu" id="navbar-menu" role="menubar">
         <li role="none"><a href="#hero" class="navbar__link active" role="menuitem">Início</a></li>
-        <li role="none"><a href="#about" class="navbar__link" role="menuitem">Sobre</a></li>
+        <li role="none"><a href="#experience" class="navbar__link" role="menuitem">Jornada</a></li>
         <li role="none"><a href="#projects" class="navbar__link" role="menuitem">Projetos</a></li>
         <li role="none"><a href="#skills" class="navbar__link" role="menuitem">Tecnologias</a></li>
+        <li role="none"><a href="#about" class="navbar__link" role="menuitem">Sobre</a></li>
         <li role="none"><a href="#contact" class="navbar__link" role="menuitem">Contato</a></li>
       </ul>
 
@@ -52,52 +53,340 @@
   <!-- ====== HERO ====== -->
   <section class="section" id="hero">
     <div class="container hero__content">
-      <p class="hero__greeting">// Olá, eu sou</p>
-      <h1 class="hero__name">Marcos <span class="gradient-text">Sousa</span></h1>
-      <p class="hero__title">Programador &amp; Desenvolvedor de Jogos</p>
-      <p class="hero__description">
-        Formado em Redes de Computadores pela UFC Quixadá, com foco em 
-        desenvolvimento de jogos utilizando Unity e Godot. Transformo ideias 
-        em experiências interativas com código limpo e arquitetura sólida.
-      </p>
-      <div class="hero__actions">
-        <a href="#projects" class="btn btn--primary">Ver Projetos</a>
-        <a href="#contact" class="btn btn--outline">Entrar em Contato</a>
+      <div class="hero__main">
+        <p class="hero__greeting">// Olá, eu sou</p>
+        <h1 class="hero__name">Marcos <span>Sousa</span></h1>
+        <p class="hero__title">Programador &amp; Desenvolvedor de Jogos</p>
+        <p class="hero__description">
+          Formado em Redes de Computadores pela UFC Quixadá, unindo o rigor de infraestrutura de software com a arte de criar jogos. Especializado em Unity e Godot 4, transformo ideias complexas em sistemas de jogo robustos, modulares e otimizados.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">Ver Projetos</a>
+          <a href="#contact" class="btn btn--outline">Entrar em Contato</a>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat-card">
+          <div class="hero__stat-number" data-target="2">0</div>
+          <div class="hero__stat-label">Engines</div>
+        </div>
+        <div class="hero__stat-card">
+          <div class="hero__stat-number" data-target="5">0</div>
+          <div class="hero__stat-label">Sistemas Core</div>
+        </div>
+        <div class="hero__stat-card">
+          <div class="hero__stat-number" data-target="4">0</div>
+          <div class="hero__stat-label">Anos de Código</div>
+        </div>
+        <div class="hero__stat-card">
+          <div class="hero__stat-number" data-target="100">0</div>
+          <div class="hero__stat-label">% Nordestino</div>
+        </div>
       </div>
     </div>
     <div class="hero__scroll-indicator" aria-hidden="true">
-      <span>Scroll</span>
+      <span>Rolar</span>
       <span>↓</span>
     </div>
   </section>
 
-  <!-- ====== ABOUT ====== -->
+  <!-- Divider Decorativo -->
+  <svg class="divider-decor" viewBox="0 0 1200 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 16L15 26L30 16L45 6L60 16L75 26L90 16L105 6L120 16L135 26L150 16L165 6L180 16L195 26L210 16L225 6L240 16L255 26L270 16L285 6L300 16L315 26L330 16L345 6L360 16L375 26L390 16L405 6L420 16L435 26L450 16L465 6L480 16L495 26L510 16L525 6L540 16L555 26L570 16L585 6L600 16L615 26L630 16L645 6L660 16L675 26L690 16L705 6L720 16L735 26L750 16L765 6L780 16L795 26L810 16L825 6L840 16L855 26L870 16L885 6L900 16L915 26L930 16L945 6L960 16L975 26L990 16L1005 6L1020 16L1035 26L1050 16L1065 6L1080 16L1095 26L1110 16L1125 6L1140 16L1155 26L1170 16L1185 6L1200 16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="600" cy="16" r="6" fill="currentColor"/>
+    <circle cx="570" cy="16" r="4" fill="currentColor"/>
+    <circle cx="630" cy="16" r="4" fill="currentColor"/>
+  </svg>
+
+  <!-- ====== TIMELINE (JORNADA) ====== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// Trajetória</span>
+        <h2 class="section__title">Minha Jornada</h2>
+        <p class="section__subtitle">A união entre teoria acadêmica e desenvolvimento prático de jogos</p>
+      </div>
+
+      <div class="timeline reveal">
+        <!-- Item 1 -->
+        <div class="timeline-item active">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-header-text">
+                <h3>Redes de Computadores</h3>
+                <span class="timeline-meta">UFC Quixadá | 2020 - 2024 (Concluído)</span>
+              </div>
+              <div class="timeline-trigger">▸</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Bacharelado concluído na Universidade Federal do Ceará. 
+                Estudos aprofundados em arquitetura de redes, concorrência, sistemas distribuídos, 
+                protocolos de comunicação e sockets. Aplicação direta destes conceitos de baixo nível 
+                na estruturação de loop de jogos, otimização de fluxo de pacotes e concorrência eficiente.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Sistemas Distribuídos</span>
+                <span class="timeline-tag">Sockets &amp; Concorrência</span>
+                <span class="timeline-tag">Arquitetura de Software</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-header-text">
+                <h3>Desenvolvimento de Jogos na Unity</h3>
+                <span class="timeline-meta">Estudos &amp; Protótipos | 2022 - Presente</span>
+              </div>
+              <div class="timeline-trigger">▸</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Programação orientada a objetos com C# na Unity Engine. Criação de sistemas modulares, 
+                State Machines para IA de inimigos, mixers de áudio dinâmicos reativos e gerenciamento de interface (UI) extensível. 
+                Forte aplicação de boas práticas e padrões de projeto (Singleton, State, Factory).
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Unity Engine</span>
+                <span class="timeline-tag">C# Scripting</span>
+                <span class="timeline-tag">Design Patterns</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-header-text">
+                <h3>Desenvolvimento com Godot 4 &amp; GDScript</h3>
+                <span class="timeline-meta">Indie Game Dev | 2023 - Presente</span>
+              </div>
+              <div class="timeline-trigger">▸</div>
+            </div>
+            <div class="timeline-content">
+              <p>
+                Especialização no motor de jogos Godot Engine 4 e linguagem GDScript. Arquitetura orientada a nós, 
+                sistemas de persistência local (Save &amp; Load) via serialização de dados estruturados em JSON, 
+                gerenciamento assíncrono de cenas com carregamento em background (Scene &amp; Map Navigation) e 
+                motores de diálogos dinâmicos para NPCs.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Godot 4</span>
+                <span class="timeline-tag">GDScript</span>
+                <span class="timeline-tag">Save System</span>
+                <span class="timeline-tag">Async Load</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider Decorativo -->
+  <svg class="divider-decor" viewBox="0 0 1200 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 16L15 26L30 16L45 6L60 16L75 26L90 16L105 6L120 16L135 26L150 16L165 6L180 16L195 26L210 16L225 6L240 16L255 26L270 16L285 6L300 16L315 26L330 16L345 6L360 16L375 26L390 16L405 6L420 16L435 26L450 16L465 6L480 16L495 26L510 16L525 6L540 16L555 26L570 16L585 6L600 16L615 26L630 16L645 6L660 16L675 26L690 16L705 6L720 16L735 26L750 16L765 6L780 16L795 26L810 16L825 6L840 16L855 26L870 16L885 6L900 16L915 26L930 16L945 6L960 16L975 26L990 16L1005 6L1020 16L1035 26L1050 16L1065 6L1080 16L1095 26L1110 16L1125 6L1140 16L1155 26L1170 16L1185 6L1200 16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="600" cy="16" r="6" fill="currentColor"/>
+    <circle cx="570" cy="16" r="4" fill="currentColor"/>
+    <circle cx="630" cy="16" r="4" fill="currentColor"/>
+  </svg>
+
+  <!-- ====== PROJECTS ====== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// Projetos</span>
+        <h2 class="section__title">Meus Trabalhos</h2>
+        <p class="section__subtitle">Projetos autorais que demonstram minha capacidade de arquitetura e lógica de gameplay</p>
+      </div>
+
+      <div class="projects__grid">
+
+        <!-- Project 1: Naboko's Deal -->
+        <article class="project-card reveal">
+          <div class="project-card__image-wrapper">
+            <img class="project-card__image" src="assets/images/projects/naboko_deal_cover.png" alt="Naboko's Deal - The Adventure Cover Art" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="btn btn--primary">Ver no Itch.io</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Projeto Destaque</span>
+            <h3 class="project-card__title">Naboko's Deal — The Adventure</h3>
+            <p class="project-card__description">
+              Acompanhe Naboko resolvendo puzzles e fazendo entregas em uma jornada para voltar para casa! Implementa um sistema completo de Save &amp; Load estruturado localmente, caixas de diálogo dinâmicas com paginação para NPCs, e carregamento assíncrono de cenários com transições suaves.
+            </p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-tag">Godot 4</span>
+              <span class="project-card__tech-tag">GDScript</span>
+              <span class="project-card__tech-tag">C# Scripting</span>
+              <span class="project-card__tech-tag">Save System</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://marcossousa.itch.io/nabokos-deal" class="btn btn--outline" target="_blank" rel="noopener">🎮 Jogar Versão Web</a>
+              <a href="https://github.com/YakumaKuramy" class="btn btn--outline" target="_blank" rel="noopener">📂 Código Fonte</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Sertão Odisseia -->
+        <article class="project-card reveal">
+          <div class="project-card__image-wrapper">
+            <img class="project-card__image" src="assets/images/projects/sertao_odisseia_cover.png" alt="Sertão Odisseia Cover Art" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="btn btn--primary">Ver Detalhes</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Game Jam</span>
+            <h3 class="project-card__title">Sertão Odisseia</h3>
+            <p class="project-card__description">
+              RPG clássico por turnos inspirado nos causos e folclore do nordeste brasileiro. O jogo utiliza uma máquina de estados robusta (Finite State Machine) para gerenciar o combate e o comportamento da inteligência artificial dos inimigos, além de possuir um sistema de áudio global dinâmico.
+            </p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-tag">Godot 4</span>
+              <span class="project-card__tech-tag">GDScript</span>
+              <span class="project-card__tech-tag">State Machine</span>
+              <span class="project-card__tech-tag">Audio Mixer</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://marcossousa.itch.io/" class="btn btn--outline" target="_blank" rel="noopener">🎮 Jogar Demo</a>
+              <a href="https://github.com/YakumaKuramy" class="btn btn--outline" target="_blank" rel="noopener">📂 Repositório</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Cactus Rush -->
+        <article class="project-card reveal">
+          <div class="project-card__image-wrapper">
+            <img class="project-card__image" src="assets/images/projects/cactus_rush_cover.png" alt="Cactus Rush Cover Art" loading="lazy">
+            <div class="project-card__overlay">
+              <span class="btn btn--primary">Ver Detalhes</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Protótipo Unity</span>
+            <h3 class="project-card__title">Cactus Rush</h3>
+            <p class="project-card__description">
+              Jogo de corrida infinita rítmico 2D onde o jogador controla o desvio de obstáculos na Caatinga. Desenvolvido para exercitar padrões de projeto como Factory (para geração infinita dos cactos) e Singleton (para gerenciadores globais), integrando salvamento local criptografado.
+            </p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-tag">Unity</span>
+              <span class="project-card__tech-tag">C#</span>
+              <span class="project-card__tech-tag">Object Pooling</span>
+              <span class="project-card__tech-tag">Factory Pattern</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://marcossousa.itch.io/" class="btn btn--outline" target="_blank" rel="noopener">🎮 Jogar Demo</a>
+              <a href="https://github.com/YakumaKuramy" class="btn btn--outline" target="_blank" rel="noopener">📂 Repositório</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider Decorativo -->
+  <svg class="divider-decor" viewBox="0 0 1200 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 16L15 26L30 16L45 6L60 16L75 26L90 16L105 6L120 16L135 26L150 16L165 6L180 16L195 26L210 16L225 6L240 16L255 26L270 16L285 6L300 16L315 26L330 16L345 6L360 16L375 26L390 16L405 6L420 16L435 26L450 16L465 6L480 16L495 26L510 16L525 6L540 16L555 26L570 16L585 6L600 16L615 26L630 16L645 6L660 16L675 26L690 16L705 6L720 16L735 26L750 16L765 6L780 16L795 26L810 16L825 6L840 16L855 26L870 16L885 6L900 16L915 26L930 16L945 6L960 16L975 26L990 16L1005 6L1020 16L1035 26L1050 16L1065 6L1080 16L1095 26L1110 16L1125 6L1140 16L1155 26L1170 16L1185 6L1200 16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="600" cy="16" r="6" fill="currentColor"/>
+    <circle cx="570" cy="16" r="4" fill="currentColor"/>
+    <circle cx="630" cy="16" r="4" fill="currentColor"/>
+  </svg>
+
+  <!-- ====== SKILLS ====== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// Tecnologias</span>
+        <h2 class="section__title">Stack Técnico</h2>
+        <p class="section__subtitle">Ferramentas e tecnologias que utilizo no dia a dia</p>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill-category reveal stagger-1">
+          <div class="skill-category__icon">🎮</div>
+          <h3 class="skill-category__title">Game Engines</h3>
+          <ul class="skill-category__list">
+            <li class="skill-category__item">Unity</li>
+            <li class="skill-category__item">Godot 4</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal stagger-2">
+          <div class="skill-category__icon">💻</div>
+          <h3 class="skill-category__title">Linguagens</h3>
+          <ul class="skill-category__list">
+            <li class="skill-category__item">C# (Unity)</li>
+            <li class="skill-category__item">GDScript (Godot)</li>
+            <li class="skill-category__item">HTML / CSS / JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal stagger-3">
+          <div class="skill-category__icon">⚙️</div>
+          <h3 class="skill-category__title">Sistemas de Jogo</h3>
+          <ul class="skill-category__list">
+            <li class="skill-category__item">Save &amp; Load System</li>
+            <li class="skill-category__item">UI &amp; Menu Manager</li>
+            <li class="skill-category__item">Dialogue System</li>
+            <li class="skill-category__item">Audio Mixer / Sound Manager</li>
+            <li class="skill-category__item">Scene &amp; Map Navigation</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal stagger-4">
+          <div class="skill-category__icon">🧩</div>
+          <h3 class="skill-category__title">Padrões &amp; Práticas</h3>
+          <ul class="skill-category__list">
+            <li class="skill-category__item">Singleton Pattern</li>
+            <li class="skill-category__item">State Machine</li>
+            <li class="skill-category__item">Código Modular</li>
+            <li class="skill-category__item">Serialização de Dados</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider Decorativo -->
+  <svg class="divider-decor" viewBox="0 0 1200 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 16L15 26L30 16L45 6L60 16L75 26L90 16L105 6L120 16L135 26L150 16L165 6L180 16L195 26L210 16L225 6L240 16L255 26L270 16L285 6L300 16L315 26L330 16L345 6L360 16L375 26L390 16L405 6L420 16L435 26L450 16L465 6L480 16L495 26L510 16L525 6L540 16L555 26L570 16L585 6L600 16L615 26L630 16L645 6L660 16L675 26L690 16L705 6L720 16L735 26L750 16L765 6L780 16L795 26L810 16L825 6L840 16L855 26L870 16L885 6L900 16L915 26L930 16L945 6L960 16L975 26L990 16L1005 6L1020 16L1035 26L1050 16L1065 6L1080 16L1095 26L1110 16L1125 6L1140 16L1155 26L1170 16L1185 6L1200 16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="600" cy="16" r="6" fill="currentColor"/>
+    <circle cx="570" cy="16" r="4" fill="currentColor"/>
+    <circle cx="630" cy="16" r="4" fill="currentColor"/>
+  </svg>
+
+  <!-- ====== ABOUT (SOBRE) ====== -->
   <section class="section" id="about">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label">// Sobre mim</span>
         <h2 class="section__title">Quem sou eu</h2>
-        <p class="section__subtitle">Conheça minha trajetória e formação</p>
+        <p class="section__subtitle">Conheça minha trajetória e formação acadêmica</p>
       </div>
 
       <div class="about__grid">
         <div class="about__image-wrapper reveal-left">
-          <!-- Profile image placeholder -->
-          <div class="about__image" style="background: var(--color-bg-tertiary);"></div>
+          <div class="about__image">
+            <img src="assets/images/profile/profile.png" alt="Marcos Sousa" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
         </div>
         <div class="about__text reveal-right">
           <h3>Marcos Paulo de Sousa dos Santos</h3>
           <p>
-            Sou programador com formação em Redes de Computadores pela 
-            Universidade Federal do Ceará — Campus Quixadá. Minha paixão pela 
-            programação de jogos me levou a dominar engines como Unity e Godot 4, 
-            onde desenvolvo sistemas completos de gameplay, UI, áudio e 
-            gerenciamento de cenas.
+            Sou programador graduado em Redes de Computadores pela Universidade Federal do Ceará — Campus Quixadá. Minha trajetória acadêmica me deu uma sólida compreensão de arquitetura de software, concorrência de processos e comunicação de dados.
           </p>
           <p>
-            Busco sempre aplicar boas práticas de engenharia de software, como 
-            padrões de projeto (Singleton, State Machine), modularidade e 
-            código limpo em cada projeto que desenvolvo.
+            Fascinado por desenvolvimento de jogos, aplico estes conceitos para desenvolver arquiteturas de gameplay organizadas, modulares e de alto desempenho nas engines Unity e Godot 4. Defendo fortemente o uso de código limpo, documentação precisa e a aplicação consciente de design patterns (Singleton, State Machine, Factory, Observer).
           </p>
           <div class="about__info-grid">
             <div class="about__info-item">
@@ -110,116 +399,13 @@
             </div>
             <div class="about__info-item">
               <div class="about__info-label">Foco</div>
-              <div class="about__info-value">Game Development</div>
+              <div class="about__info-value">Game Programing</div>
             </div>
             <div class="about__info-item">
-              <div class="about__info-label">Região</div>
+              <div class="about__info-label">Origem</div>
               <div class="about__info-value">Sertão Central, CE</div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== PROJECTS ====== -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">// Projetos</span>
-        <h2 class="section__title">Meus Trabalhos</h2>
-        <p class="section__subtitle">Projetos que demonstram minhas habilidades técnicas</p>
-      </div>
-
-      <div class="projects__grid">
-
-        <!-- Project: Naboko's Deal -->
-        <article class="glass-card project-card reveal">
-          <div class="project-card__image-wrapper">
-            <!-- Project screenshot placeholder -->
-            <div class="project-card__image" style="background: var(--color-bg-tertiary);"></div>
-            <div class="project-card__overlay">
-              <span class="btn btn--primary btn--sm">Ver Detalhes</span>
-            </div>
-          </div>
-          <div class="project-card__content">
-            <span class="project-card__tag">Projeto Destaque</span>
-            <h3 class="project-card__title">Naboko's Deal — The Adventure</h3>
-            <p class="project-card__description">
-              Junte-se a Naboko em sua jornada de volta para casa! Um jogo de 
-              quebra-cabeças e entregas com sistema completo de save/load, 
-              diálogos dinâmicos, gerenciamento de áudio e navegação de cenas 
-              assíncrona.
-            </p>
-            <div class="project-card__tech">
-              <span class="project-card__tech-tag">Godot 4</span>
-              <span class="project-card__tech-tag">GDScript</span>
-              <span class="project-card__tech-tag">Unity</span>
-              <span class="project-card__tech-tag">C#</span>
-            </div>
-            <div class="project-card__links">
-              <a href="#" class="btn btn--outline" target="_blank" rel="noopener">🎮 Jogar Online</a>
-              <a href="#" class="btn btn--outline" target="_blank" rel="noopener">📂 Itch.io</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Placeholder for future projects -->
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== SKILLS ====== -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section__header reveal">
-        <span class="section__label">// Tecnologias</span>
-        <h2 class="section__title">Stack Técnico</h2>
-        <p class="section__subtitle">Ferramentas e tecnologias que utilizo no dia a dia</p>
-      </div>
-
-      <div class="skills__grid">
-        <div class="glass-card skill-category reveal stagger-1">
-          <div class="skill-category__icon">🎮</div>
-          <h3 class="skill-category__title">Game Engines</h3>
-          <ul class="skill-category__list">
-            <li class="skill-category__item">Unity</li>
-            <li class="skill-category__item">Godot 4</li>
-          </ul>
-        </div>
-
-        <div class="glass-card skill-category reveal stagger-2">
-          <div class="skill-category__icon">💻</div>
-          <h3 class="skill-category__title">Linguagens</h3>
-          <ul class="skill-category__list">
-            <li class="skill-category__item">C# (Unity)</li>
-            <li class="skill-category__item">GDScript (Godot)</li>
-            <li class="skill-category__item">HTML / CSS / JavaScript</li>
-          </ul>
-        </div>
-
-        <div class="glass-card skill-category reveal stagger-3">
-          <div class="skill-category__icon">⚙️</div>
-          <h3 class="skill-category__title">Sistemas de Jogo</h3>
-          <ul class="skill-category__list">
-            <li class="skill-category__item">Save & Load System</li>
-            <li class="skill-category__item">UI & Menu Manager</li>
-            <li class="skill-category__item">Dialogue System</li>
-            <li class="skill-category__item">Audio Mixer / Sound Manager</li>
-            <li class="skill-category__item">Scene & Map Navigation</li>
-          </ul>
-        </div>
-
-        <div class="glass-card skill-category reveal stagger-4">
-          <div class="skill-category__icon">🧩</div>
-          <h3 class="skill-category__title">Padrões & Práticas</h3>
-          <ul class="skill-category__list">
-            <li class="skill-category__item">Singleton Pattern</li>
-            <li class="skill-category__item">State Machine</li>
-            <li class="skill-category__item">Código Modular</li>
-            <li class="skill-category__item">Serialização de Dados</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -239,15 +425,15 @@
           <h3>Fale Comigo</h3>
           <p>Estou sempre aberto a novas oportunidades e colaborações. Não hesite em entrar em contato!</p>
 
-          <a href="#" class="contact__link-item" target="_blank" rel="noopener">
+          <a href="https://marcossousa.itch.io/" class="contact__link-item" target="_blank" rel="noopener">
             <span>🔗</span>
             <span>Perfil Itch.io</span>
           </a>
-          <a href="#" class="contact__link-item" target="_blank" rel="noopener">
+          <a href="https://linkedin.com" class="contact__link-item" target="_blank" rel="noopener">
             <span>💼</span>
             <span>LinkedIn</span>
           </a>
-          <a href="#" class="contact__link-item" target="_blank" rel="noopener">
+          <a href="https://github.com/YakumaKuramy" class="contact__link-item" target="_blank" rel="noopener">
             <span>🐙</span>
             <span>GitHub</span>
           </a>

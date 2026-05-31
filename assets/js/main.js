@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbarScroll();
   initSmoothScroll();
   initActiveNavLink();
+  initTimelineAccordion();
+  initStatsCounter();
 });
 
 /**
@@ -79,4 +81,76 @@ function initActiveNavLink() {
   );
 
   sections.forEach(section => observer.observe(section));
+}
+
+/**
+ * Accordion functionality for Timeline (Jornada) section
+ */
+function initTimelineAccordion() {
+  const items = document.querySelectorAll('.timeline-item');
+  if (!items.length) return;
+
+  items.forEach(item => {
+    const header = item.querySelector('.timeline-header');
+    if (!header) return;
+
+    header.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+
+      // Close all items
+      items.forEach(i => i.classList.remove('active'));
+
+      // If clicked item wasn't active, open it
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+}
+
+/**
+ * Animated counters for Hero Stats section
+ */
+function initStatsCounter() {
+  const counters = document.querySelectorAll('.hero__stat-number');
+  if (!counters.length) return;
+
+  const animateCounter = (counter) => {
+    const target = parseInt(counter.getAttribute('data-target'), 10);
+    const duration = 1500; // 1.5 seconds
+    const startTime = performance.now();
+
+    const update = (now) => {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      // Ease-out quad formula
+      const easeProgress = progress * (2 - progress);
+      const currentValue = Math.floor(easeProgress * target);
+
+      counter.innerText = currentValue;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    requestAnimationFrame(update);
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target); // Trigger only once
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  counters.forEach(counter => observer.observe(counter));
 }
