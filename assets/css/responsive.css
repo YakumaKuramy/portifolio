@@ -1,0 +1,156 @@
+/* ============================================
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   ============================================ */
+
+/* --- Tablet (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+  :root {
+    --space-section: clamp(3rem, 8vh, 6rem);
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .about__image-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .project-card:nth-child(even) {
+    direction: ltr;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+/* --- Mobile Large (max-width: 768px) --- */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-lg);
+  }
+
+  .section__title {
+    font-size: var(--fs-3xl);
+  }
+
+  /* Navbar Mobile */
+  .navbar__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 320px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-bg-secondary);
+    border-left: 1px solid var(--color-border);
+    padding: var(--space-2xl);
+    transition: right var(--transition-slow);
+    z-index: var(--z-overlay);
+  }
+
+  .navbar__menu.open {
+    right: 0;
+  }
+
+  .navbar__toggle {
+    display: flex;
+    z-index: var(--z-modal);
+  }
+
+  .navbar__toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .navbar__toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar__toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Menu Overlay */
+  .navbar__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: var(--z-sticky);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+  }
+
+  .navbar__overlay.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Hero Mobile */
+  .hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero__scroll-indicator {
+    display: none;
+  }
+
+  /* About Mobile */
+  .about__info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skills Mobile */
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Project Card Mobile */
+  .project-card {
+    padding: var(--space-xl);
+  }
+}
+
+/* --- Mobile Small (max-width: 480px) --- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .section__title {
+    font-size: var(--fs-2xl);
+  }
+
+  .hero__name {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .hero__title {
+    font-size: var(--fs-lg);
+  }
+
+  .btn {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: var(--fs-xs);
+  }
+
+  .project-card {
+    padding: var(--space-lg);
+  }
+
+  .project-card__title {
+    font-size: var(--fs-xl);
+  }
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Marcos Paulo de Sousa dos Santos — Programador e Desenvolvedor de Jogos. Projetos em Unity, Godot, C# e GDScript.">
+  <meta name="keywords" content="programador, desenvolvedor de jogos, Unity, Godot, C#, GDScript, portfólio">
+  <meta name="author" content="Marcos Paulo de Sousa dos Santos">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Marcos Sousa — Programador & Game Developer">
+  <meta property="og:description" content="Portfólio técnico de programação e desenvolvimento de jogos.">
+  <meta property="og:type" content="website">
+
+  <title>Marcos Sousa — Programador & Game Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar" aria-label="Navegação principal">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo">marcos<span>.</span>dev</a>
+
+      <ul class="navbar__menu" id="navbar-menu" role="menubar">
+        <li role="none"><a href="#hero" class="navbar__link active" role="menuitem">Início</a></li>
+        <li role="none"><a href="#about" class="navbar__link" role="menuitem">Sobre</a></li>
+        <li role="none"><a href="#projects" class="navbar__link" role="menuitem">Projetos</a></li>
+        <li role="none"><a href="#skills" class="navbar__link" role="menuitem">Tecnologias</a></li>
+        <li role="none"><a href="#contact" class="navbar__link" role="menuitem">Contato</a></li>
+      </ul>
+
+      <button class="navbar__toggle" id="navbar-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar__overlay" id="navbar-overlay"></div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="section" id="hero">
+    <div class="container hero__content">
+      <p class="hero__greeting">// Olá, eu sou</p>
+      <h1 class="hero__name">Marcos <span class="gradient-text">Sousa</span></h1>
+      <p class="hero__title">Programador &amp; Desenvolvedor de Jogos</p>
+      <p class="hero__description">
+        Formado em Redes de Computadores pela UFC Quixadá, com foco em 
+        desenvolvimento de jogos utilizando Unity e Godot. Transformo ideias 
+        em experiências interativas com código limpo e arquitetura sólida.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">Ver Projetos</a>
+        <a href="#contact" class="btn btn--outline">Entrar em Contato</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <span>↓</span>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// Sobre mim</span>
+        <h2 class="section__title">Quem sou eu</h2>
+        <p class="section__subtitle">Conheça minha trajetória e formação</p>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__image-wrapper reveal-left">
+          <!-- Profile image placeholder -->
+          <div class="about__image" style="background: var(--color-bg-tertiary);"></div>
+        </div>
+        <div class="about__text reveal-right">
+          <h3>Marcos Paulo de Sousa dos Santos</h3>
+          <p>
+            Sou programador com formação em Redes de Computadores pela 
+            Universidade Federal do Ceará — Campus Quixadá. Minha paixão pela 
+            programação de jogos me levou a dominar engines como Unity e Godot 4, 
+            onde desenvolvo sistemas completos de gameplay, UI, áudio e 
+            gerenciamento de cenas.
+          </p>
+          <p>
+            Busco sempre aplicar boas práticas de engenharia de software, como 
+            padrões de projeto (Singleton, State Machine), modularidade e 
+            código limpo em cada projeto que desenvolvo.
+          </p>
+          <div class="about__info-grid">
+            <div class="about__info-item">
+              <div class="about__info-label">Formação</div>
+              <div class="about__info-value">Redes de Computadores</div>
+            </div>
+            <div class="about__info-item">
+              <div class="about__info-label">Universidade</div>
+              <div class="about__info-value">UFC Quixadá</div>
+            </div>
+            <div class="about__info-item">
+              <div class="about__info-label">Foco</div>
+              <div class="about__info-value">Game Development</div>
+            </div>
+            <div class="about__info-item">
+              <div class="about__info-label">Região</div>
+              <div class="about__info-value">Sertão Central, CE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// Projetos</span>
+        <h2 class="section__title">Meus Trabalhos</h2>
+        <p class="section__subtitle">Projetos que demonstram minhas habilidades técnicas</p>
+      </div>
+
+      <div class="projects__grid">
+
+        <!-- Project: Naboko's Deal -->
+        <article class="glass-card project-card reveal">
+          <div class="project-card__image-wrapper">
+            <!-- Project screenshot placeholder -->
+            <div class="project-card__image" style="background: var(--color-bg-tertiary);"></div>
+            <div class="project-card__overlay">
+              <span class="btn btn--primary btn--sm">Ver Detalhes</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__tag">Projeto Destaque</span>
+            <h3 class="project-card__title">Naboko's Deal — The Adventure</h3>
+            <p class="project-card__description">
+              Junte-se a Naboko em sua jornada de volta para casa! Um jogo de 
+              quebra-cabeças e entregas com sistema completo de save/load, 
+              diálogos dinâmicos, gerenciamento de áudio e navegação de cenas 
+              assíncrona.
+            </p>
+            <div class="project-card__tech">
+              <span class="project-card__tech-tag">Godot 4</span>
+              <span class="project-card__tech-tag">GDScript</span>
+              <span class="project-card__tech-tag">Unity</span>
+              <span class="project-card__tech-tag">C#</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--outline" target="_blank" rel="noopener">🎮 Jogar Online</a>
+              <a href="#" class="btn btn--outline" target="_blank" rel="noopener">📂 Itch.io</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Placeholder for future projects -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// Tecnologias</span>
+        <h2 class="section__title">Stack Técnico</h2>
+        <p class="section__subtitle">Ferramentas e tecnologias que utilizo no dia a dia</p>
+      </div>
+
+      <div class="skills__grid">
+        <div class="glass-card skill-category reveal stagger-1">
+          <div class="skill-category__icon">🎮</div>
+          <h3 class="skill-category__title">Game Engines</h3>
+          <ul class="skill-category__list">
+            <li class="skill-category__item">Unity</li>
+            <li class="skill-category__item">Godot 4</li>
+          </ul>
+        </div>
+
+        <div class="glass-card skill-category reveal stagger-2">
+          <div class="skill-category__icon">💻</div>
+          <h3 class="skill-category__title">Linguagens</h3>
+          <ul class="skill-category__list">
+            <li class="skill-category__item">C# (Unity)</li>
+            <li class="skill-category__item">GDScript (Godot)</li>
+            <li class="skill-category__item">HTML / CSS / JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="glass-card skill-category reveal stagger-3">
+          <div class="skill-category__icon">⚙️</div>
+          <h3 class="skill-category__title">Sistemas de Jogo</h3>
+          <ul class="skill-category__list">
+            <li class="skill-category__item">Save & Load System</li>
+            <li class="skill-category__item">UI & Menu Manager</li>
+            <li class="skill-category__item">Dialogue System</li>
+            <li class="skill-category__item">Audio Mixer / Sound Manager</li>
+            <li class="skill-category__item">Scene & Map Navigation</li>
+          </ul>
+        </div>
+
+        <div class="glass-card skill-category reveal stagger-4">
+          <div class="skill-category__icon">🧩</div>
+          <h3 class="skill-category__title">Padrões & Práticas</h3>
+          <ul class="skill-category__list">
+            <li class="skill-category__item">Singleton Pattern</li>
+            <li class="skill-category__item">State Machine</li>
+            <li class="skill-category__item">Código Modular</li>
+            <li class="skill-category__item">Serialização de Dados</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">// Contato</span>
+        <h2 class="section__title">Vamos Conversar</h2>
+        <p class="section__subtitle">Entre em contato para projetos, colaborações ou oportunidades</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal-left">
+          <h3>Fale Comigo</h3>
+          <p>Estou sempre aberto a novas oportunidades e colaborações. Não hesite em entrar em contato!</p>
+
+          <a href="#" class="contact__link-item" target="_blank" rel="noopener">
+            <span>🔗</span>
+            <span>Perfil Itch.io</span>
+          </a>
+          <a href="#" class="contact__link-item" target="_blank" rel="noopener">
+            <span>💼</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="#" class="contact__link-item" target="_blank" rel="noopener">
+            <span>🐙</span>
+            <span>GitHub</span>
+          </a>
+        </div>
+
+        <form class="contact__form reveal-right" id="contact-form">
+          <div class="form__group">
+            <label class="form__label" for="contact-name">Nome</label>
+            <input class="form__input" type="text" id="contact-name" name="name" placeholder="Seu nome" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="contact-email">E-mail</label>
+            <input class="form__input" type="email" id="contact-email" name="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="contact-message">Mensagem</label>
+            <textarea class="form__textarea" id="contact-message" name="message" placeholder="Sua mensagem..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        &copy; 2026 <span>Marcos Sousa</span>. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/navigation.js"></script>
+</body>
+</html>
