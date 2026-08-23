@@ -1,0 +1,19 @@
+# Data file for portfolio projects
+# Each entry defines a project that will be rendered as a card
+# Add more entries following the same structure
+- title: "Naboko's Deal — The Adventure"
+  description: |
+    Junte-se a Naboko em sua jornada de volta para casa! Um jogo de aventura e quebra‑puzzle que serve como modelo principal da minha arquitetura de software de jogos.
+  tagline: "Gameplay, Save/Load, Dialogue System"
+  image: "assets/images/nabokos-deal-cover.png"
+  video: "assets/videos/nabokos-deal-preview.mp4"
+  tags:
+    - Godot 4
+    - GDScript
+    - "Save & Load System"
+    - "Dialogue System"
+    - "Scene Management"
+  links:
+    play: "https://marcossousa.itch.io/nabokos-deal"
+    repo: "https://github.com/YakumaKuramy"
+    caseStudy: "#"
