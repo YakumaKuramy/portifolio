@@ -543,6 +543,24 @@
   object-fit: contain;
 }
 
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--space-xl);
+  background: linear-gradient(to top, rgba(26, 20, 16, 0.9), transparent 55%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  text-decoration: none;
+}
+
+.project-card__image-wrapper:hover .project-card__overlay,
+.project-card__overlay:focus-visible {
+  opacity: 1;
+}
+
 .project-card__content {
   display: flex;
   flex-direction: column;
@@ -606,10 +624,40 @@
   border-left: 2px solid var(--color-accent-secondary);
 }
 
-.project-card__links {
-  display: flex;
-  gap: var(--space-md);
-  margin-top: var(--space-md);
+.project-card__gallery {
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin-top: var(--space-lg);
+  padding-top: var(--space-xl);
+  border-top: 2px dashed var(--color-border);
+}
+
+.project-card__gallery .gallery__title {
+  margin-bottom: var(--space-lg);
+}
+
+.project-card__gallery .gallery__item {
+  min-width: 0;
+  margin: 0;
+}
+
+.project-card__gallery .gallery__item img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--color-bg-primary);
+}
+
+.project-card__gallery .gallery__item figcaption {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+@media (hover: none) {
+  .project-card__overlay {
+    opacity: 1;
+  }
 }
 
 /* --- Skills / Stack Section (Xilo Blocks) --- */

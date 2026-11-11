@@ -1,7 +1,7 @@
 # 🎮 Olá, eu sou o Marcos!
-### Graduando em Redes de Computadores | Desenvolvedor de Jogos
+### Desenvolvedor de Jogos | Programador
 
-Sou graduando em Redes de Computadores na UFC Quixadá e desenvolvedor de jogos. Gosto de criar experiências interativas e sistemas de gameplay organizados, com foco em Unity, Godot e código modular.
+Sou desenvolvedor de jogos e programador. Gosto de criar experiências interativas e sistemas de gameplay organizados, com foco em Unity, Godot e código modular.
 
 ### 🌐 Onde me encontrar
 
@@ -14,9 +14,9 @@ Sou graduando em Redes de Computadores na UFC Quixadá e desenvolvedor de jogos.
 
 #### [Naboko's Deal — The Adventure](https://marcossousa.itch.io/nabokos-deal)
 
-Jogo de aventura e quebra-cabeças desenvolvido com Godot 4. O projeto explora sistemas de gameplay modulares, incluindo salvamento e carregamento, diálogos e gerenciamento de cenas.
+Jogo de aventura e quebra-cabeças desenvolvido com Godot 3.5. O projeto explora sistemas de gameplay modulares, incluindo salvamento e carregamento, diálogos e gerenciamento de cenas.
 
-- **Tecnologias:** Godot 4 e GDScript
+- **Tecnologias:** Godot 3.5 e GDScript
 - **Jogar:** [Itch.io](https://marcossousa.itch.io/nabokos-deal)
 - **GitHub:** [YakumaKuramy](https://github.com/YakumaKuramy)
 
