@@ -1,46 +1,52 @@
-# Portfólio - Marcos Paulo de Sousa dos Santos
+# 🎮 Olá, eu sou o Marcos!
+### Graduando em Redes de Computadores | Desenvolvedor de Jogos
 
-Portfólio técnico online de programação e desenvolvimento de jogos.
+Sou graduando em Redes de Computadores na UFC Quixadá e desenvolvedor de jogos. Gosto de criar experiências interativas e sistemas de gameplay organizados, com foco em Unity, Godot e código modular.
 
-## 🛠️ Tecnologias
+### 🌐 Onde me encontrar
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+- 🕹️ [Itch.io — meus jogos](https://marcossousa.itch.io/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/marcos-sousa-santos/)
+- 🐙 [GitHub](https://github.com/YakumaKuramy)
+- ⏱️ [WakaTime](https://wakatime.com/@Marcos_Sousa)
 
-## 📁 Estrutura do Projeto
+### 🚀 Jogo em destaque
 
+#### [Naboko's Deal — The Adventure](https://marcossousa.itch.io/nabokos-deal)
+
+Jogo de aventura e quebra-cabeças desenvolvido com Godot 4. O projeto explora sistemas de gameplay modulares, incluindo salvamento e carregamento, diálogos e gerenciamento de cenas.
+
+- **Tecnologias:** Godot 4 e GDScript
+- **Jogar:** [Itch.io](https://marcossousa.itch.io/nabokos-deal)
+- **GitHub:** [YakumaKuramy](https://github.com/YakumaKuramy)
+
+### 🛠️ Tecnologias e áreas de interesse
+
+- **Engines:** Unity e Godot 4
+- **Linguagens:** C#, GDScript, HTML, CSS e JavaScript
+- **Interesses:** programação de gameplay, sistemas de jogo e arquitetura modular
+
+### 💻 Sobre este repositório
+
+Este repositório contém o código-fonte do meu portfólio, uma página responsiva para apresentar minha trajetória, tecnologias e projetos. O site é feito com HTML, CSS e JavaScript; o Eleventy é usado nos comandos de desenvolvimento e build.
+
+#### Estrutura
+
+```text
+index.html
+assets/
+  css/       estilos, seções, animações e responsividade
+  images/    imagens de perfil e projetos
+  js/        navegação, animações e lógica da página
+data/        dados de projetos
+src/         componentes
 ```
-portifolio/
-├── index.html              # Página principal (single-page)
-├── assets/
-│   ├── css/
-│   │   ├── styles.css      # Estilos globais e design system
-│   │   ├── sections.css    # Estilos específicos de cada seção
-│   │   ├── animations.css  # Animações e transições
-│   │   └── responsive.css  # Media queries e responsividade
-│   ├── js/
-│   │   ├── main.js         # Lógica principal e inicialização
-│   │   ├── animations.js   # Scroll animations e efeitos visuais
-│   │   └── navigation.js   # Navegação e menu mobile
-│   └── images/
-│       ├── projects/       # Screenshots e mídia dos projetos
-│       ├── icons/          # Ícones customizados e tecnologias
-│       └── profile/        # Foto de perfil e branding
-├── favicon.ico
-└── README.md
+
+#### Executar localmente
+
+```bash
+npm install
+npm run dev
 ```
 
-## 📌 Seções
-
-- **Hero** - Apresentação e chamada principal
-- **Sobre** - Formação, habilidades e trajetória
-- **Projetos** - Portfólio de projetos com detalhes técnicos
-- **Tecnologias** - Stack técnico e ferramentas
-- **Contato** - Formulário e links de contato
-
-## 👤 Autor
-
-**Marcos Paulo de Sousa dos Santos**
-Programador | Desenvolvedor de Jogos
-Formação: Redes de Computadores – UFC Quixadá
+Para gerar a versão de produção, execute `npm run build`.
