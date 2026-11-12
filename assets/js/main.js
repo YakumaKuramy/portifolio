@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveNavLink();
   initTimelineAccordion();
   initStatsCounter();
+  initContactForm();
 });
 
 /**
@@ -153,4 +154,58 @@ function initStatsCounter() {
   );
 
   counters.forEach(counter => observer.observe(counter));
+}
+
+/**
+ * Submits the contact form to Formspree without leaving the page.
+ */
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('contact-form-status');
+  const submitButton = form?.querySelector('button[type="submit"]');
+
+  if (!form || !status || !submitButton) return;
+
+  const defaultButtonText = submitButton.textContent;
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (!form.reportValidity()) return;
+
+    status.hidden = true;
+    status.textContent = '';
+    form.setAttribute('aria-busy', 'true');
+    submitButton.disabled = true;
+    submitButton.textContent = 'Enviando...';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`Formspree returned ${response.status}`);
+      }
+
+      form.reset();
+      status.textContent = 'Mensagem enviada com sucesso. Obrigado pelo contato!';
+      status.classList.remove('form__status--error');
+      status.classList.add('form__status--success');
+    } catch (error) {
+      console.error('Contact form submission failed:', error);
+      status.textContent = 'Não foi possível enviar sua mensagem. Tente novamente ou entre em contato pelos links ao lado.';
+      status.classList.remove('form__status--success');
+      status.classList.add('form__status--error');
+    } finally {
+      status.hidden = false;
+      form.removeAttribute('aria-busy');
+      submitButton.disabled = false;
+      submitButton.textContent = defaultButtonText;
+    }
+  });
 }

@@ -836,6 +836,40 @@
   min-height: 140px;
 }
 
+.form__honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form__status {
+  margin: 0;
+  padding: var(--space-md);
+  border: 1px solid currentColor;
+}
+
+.form__privacy-note {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-normal);
+}
+
+.form__status--success {
+  color: #8bd49c;
+}
+
+.form__status--error {
+  color: #ff9a8b;
+}
+
+.contact__form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
 /* --- Game Gallery --- */
 .gallery__container {
   margin-top: var(--space-3xl);
