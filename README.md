@@ -1,5 +1,5 @@
 # 🎮 Olá, eu sou o Marcos!
-### Desenvolvedor de Jogos | Programador
+### Desenvolvedor de Jogos
 
 Sou desenvolvedor de jogos e programador. Gosto de criar experiências interativas e sistemas de gameplay organizados, com foco em Unity, Godot e código modular.
 
